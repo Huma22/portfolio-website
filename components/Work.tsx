@@ -8,14 +8,29 @@ const roles = [
     title: "Software Engineer",
     period: "Mar 2023 - Present",
     summary:
-      "Built serverless AWS systems using Lambda, SQS, S3, API Gateway, and Aurora PostgreSQL to process high-volume healthcare workflows.",
+      "Built and operated AWS serverless and analytics systems across healthcare and fintech, improving reliability, observability, and governance at scale.",
+    bullets: [
+      "Built an AWS serverless pipeline (Lambda, SQS, S3, API Gateway, Aurora PostgreSQL) processing 1M daily drug requests; improved run reliability from 70% to 96% with validation and monitoring.",
+      "Built MCP integrations and internal APIs on AWS (Lambda, API Gateway, IAM, Terraform) with structured logging for traceability and faster debugging.",
+      "Supported Aurora PostgreSQL to Redshift migrations using AWS DMS with S3 staging; added reconciliation checks and task health monitoring.",
+      "Migrated reporting from Sisense to Amazon QuickSight using AWS Glue and RDS datasets; rebuilt KPIs with scheduled refreshes, validation, and alerting.",
+      "Automated ops checks with AWS SDK tooling (permissions, refresh status, task health) to reduce manual console work; governed QuickSight assets across 15+ AWS accounts and helped reduce cloud spend by 20%.",
+    ],
   },
   {
     company: "Korn Ferry",
     title: "Web/UI Developer Co-Op",
     period: "Jun 2022 - Oct 2022",
     summary:
-      "Developed interactive analytics experiences and REST-driven features with React, D3.js, and Java for enterprise reporting use cases.",
+      "Built interactive talent acquisition report visualizations using D3.js, Java, and HTML to help clients analyze company operations and workforce demographics more effectively. Developed a user friendly web portal with Bootstrap and React, including real time data updates, a comprehensive dashboard, and a dynamic news section to improve engagement. Implemented a RESTful API endpoint to fetch and sort the latest news, and integrated click tracking to measure usage and increase the efficiency of content delivery",
+
+  },
+  {
+    company: "University of Illinois at Chicago",
+    title: "Computer Science Teaching Assistant-CS362 ",
+    period: "Dec2021 - Jan 2023",
+    summary:
+      "Assisted the professor in supervising students using hardware tools including Arduino, Raspberry Pi, MinnowBoard MAX, and Nanode. Guided 250+ students through hands on lab sessions, ran office hours for individual support, and provided detailed feedback on assignments and labs to help students strengthen understanding and stay on track.",
   },
   {
     company: "Illinois Department of Transportation",
