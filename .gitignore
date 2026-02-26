@@ -41,6 +41,5 @@ yarn-error.log*
 next-env.d.ts
 
 # Ignored assets
-public/sequence/
 Himas_Resume.pdf
 
