@@ -12,7 +12,7 @@ const aboutLines = [
 ];
 
 const skillBars = [
-  { label: "Python", level: 95 },
+  { label: "Python/TensorFlow/pytorch/scikit-learn/pandas/numpy/matplotlib", level: 95 },
   { label: "TypeScript / JavaScript", level: 90 },
   { label: "SQL (PostgreSQL, Aurora, Redshift)", level: 92 },
   { label: "Node.js", level: 86 },
@@ -25,21 +25,14 @@ const skillBars = [
   { label: "AWS Monitoring (CloudWatch)", level: 88 },
   { label: "AWS Orchestration (Step Functions)", level: 82 },
   { label: "ETL and Data Pipelines", level: 92 },
-  { label: "Data Modeling and Validation", level: 85 },
-  { label: "Performance Tuning and Reliability", level: 90 },
   { label: "BI and Dashboards (QuickSight)", level: 82 },
   { label: "React", level: 82 },
   { label: "Next.js", level: 80 },
   { label: "HTML / CSS / Tailwind", level: 78 },
   { label: "Terraform (Infrastructure as Code)", level: 82 },
   { label: "CI/CD (build and release pipelines)", level: 75 },
-  { label: "Applied ML (TensorFlow)", level: 80 },
-  { label: "Computer Vision (OpenCV, Mask R-CNN)", level: 78 },
-  { label: "Quant Research Pipelines (features, backtests)", level: 76 },
-  { label: "MCP Automation (tools, agents, workflows)", level: 80 },
-  { label: "LLM Integrations (prompting, tool use)", level: 78 },
+  { label: "AI Automation ( N8N, agents, workflows, MCP)", level: 80 },
   { label: "Web Automation (Puppeteer, Selenium)", level: 80 },
-  { label: "Proxies and Scraping (ScraperAPI, ZenRows)", level: 75 },
 ];
 
 const focusAreas = [
