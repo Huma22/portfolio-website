@@ -95,7 +95,7 @@ export default function Overlay() {
             {/* Section 1 */}
             <TextSection
                 scrollYProgress={scrollYProgress}
-                inputRange={[0.0, 0.04, 0.12, 0.16]}
+                inputRange={[0.00, 0.03, 0.10, 0.14]}
                 align="left"
                 eyebrow="✦ Software Engineer"
                 headline={"Huma Tejaswi Akkem"}
@@ -106,7 +106,7 @@ export default function Overlay() {
             {/* Section 2 */}
             <TextSection
                 scrollYProgress={scrollYProgress}
-                inputRange={[0.42, 0.46, 0.54, 0.58]}
+                inputRange={[0.16, 0.19, 0.26, 0.30]}
                 align="left"
                 eyebrow="✦ Current Role"
                 headline={"West Loop Strategy"}
@@ -117,7 +117,7 @@ export default function Overlay() {
             {/* Section 3 */}
             <TextSection
                 scrollYProgress={scrollYProgress}
-                inputRange={[0.22, 0.26, 0.34, 0.38]}
+                inputRange={[0.32, 0.35, 0.42, 0.46]}
                 align="left"
                 eyebrow="✦ Focus"
                 headline={"Cloud, Data, and Applied ML"}
