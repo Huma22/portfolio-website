@@ -7,15 +7,13 @@ const roles = [
     company: "West Loop Strategy (AWS Partner)",
     title: "Software Engineer",
     period: "Mar 2023 - Present",
-    summary:
-      "Built and operated AWS serverless and analytics systems across healthcare and fintech, improving reliability, observability, and governance at scale.",
-    bullets: [
+    summary: [
       "Built an AWS serverless pipeline (Lambda, SQS, S3, API Gateway, Aurora PostgreSQL) processing 1M daily drug requests; improved run reliability from 70% to 96% with validation and monitoring.",
       "Built MCP integrations and internal APIs on AWS (Lambda, API Gateway, IAM, Terraform) with structured logging for traceability and faster debugging.",
       "Supported Aurora PostgreSQL to Redshift migrations using AWS DMS with S3 staging; added reconciliation checks and task health monitoring.",
       "Migrated reporting from Sisense to Amazon QuickSight using AWS Glue and RDS datasets; rebuilt KPIs with scheduled refreshes, validation, and alerting.",
       "Automated ops checks with AWS SDK tooling (permissions, refresh status, task health) to reduce manual console work; governed QuickSight assets across 15+ AWS accounts and helped reduce cloud spend by 20%.",
-    ],
+    ]
   },
   {
     company: "Korn Ferry",
@@ -85,7 +83,15 @@ export default function Work() {
                 </p>
                 <h3 className="text-lg font-bold mb-2" style={{ color: "#f0f0f0" }}>{role.title}</h3>
                 <p className="text-sm mb-4" style={{ color: "rgba(240,240,240,0.72)" }}>{role.company}</p>
-                <p className="text-sm leading-relaxed" style={{ color: "rgba(240,240,240,0.58)" }}>{role.summary}</p>
+                {Array.isArray(role.summary) ? (
+                  <ul className="list-disc pl-4 space-y-2 text-sm leading-relaxed" style={{ color: "rgba(240,240,240,0.58)" }}>
+                    {role.summary.map((item, idx) => (
+                      <li key={idx}>{item}</li>
+                    ))}
+                  </ul>
+                ) : (
+                  <p className="text-sm leading-relaxed" style={{ color: "rgba(240,240,240,0.58)" }}>{role.summary}</p>
+                )}
               </motion.article>
             ))}
           </div>
