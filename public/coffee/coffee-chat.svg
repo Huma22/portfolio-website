@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="700" viewBox="0 0 1200 700">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#121212"/>
+      <stop offset="100%" stop-color="#1d2f13"/>
+    </linearGradient>
+    <linearGradient id="cup" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#d8ff4a"/>
+      <stop offset="100%" stop-color="#8cbf1c"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="700" fill="url(#bg)"/>
+  <circle cx="940" cy="140" r="170" fill="#d8ff4a" opacity="0.12"/>
+  <rect x="120" y="140" rx="28" ry="28" width="960" height="420" fill="#151515" stroke="#2a2a2a"/>
+  <text x="180" y="250" fill="#f0f0f0" font-size="56" font-family="Arial, sans-serif" font-weight="700">Coffee Chat</text>
+  <text x="180" y="310" fill="#b9b9b9" font-size="28" font-family="Arial, sans-serif">Let&apos;s talk cloud, backend systems, and product ideas.</text>
+  <rect x="760" y="280" width="180" height="200" rx="20" fill="url(#cup)"/>
+  <rect x="745" y="260" width="210" height="26" rx="13" fill="#e8ff89" opacity="0.8"/>
+  <path d="M 940 330 Q 1010 330 1010 390 Q 1010 450 940 450" fill="none" stroke="#d8ff4a" stroke-width="22"/>
+  <path d="M 810 220 C 780 170 850 170 820 120" fill="none" stroke="#d8ff4a" stroke-width="8" opacity="0.65"/>
+  <path d="M 865 220 C 835 170 905 170 875 120" fill="none" stroke="#d8ff4a" stroke-width="8" opacity="0.65"/>
+  <path d="M 920 220 C 890 170 960 170 930 120" fill="none" stroke="#d8ff4a" stroke-width="8" opacity="0.65"/>
+</svg>
