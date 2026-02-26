@@ -4,21 +4,42 @@ import { useRef, useState } from "react";
 import { motion, useInView } from "framer-motion";
 
 const aboutLines = [
-  "I am Huma Tejaswi Akkem, a software engineer based in Chicago.",
-  "I build AWS backend systems and data pipelines for production workloads.",
-  "My recent work focuses on serverless APIs, ETL, and analytics reliability.",
-  "I have shipped solutions across healthcare, fintech, and enterprise reporting.",
-  "I enjoy turning complex workflows into maintainable, observable systems.",
-  "I am currently focused on cloud architecture, ML integration, and scale.",
+  "Hi, I’m Huma Tejaswi Akkem, and I go by Hima.",
+  "I’m a software engineer in Chicago. I like building systems that are reliable, fast, and calm in production.",
+  "Most days I’m in AWS, Python, and SQL, shipping serverless pipelines and APIs, then adding the boring-but-important parts like monitoring and guardrails.",
+  "Lately I’ve been focused on quant projects using ML, building data pipelines, features, and simple backtests to turn market data into signals you can actually measure.",
+  "When I’m not coding, I’m usually playing chess, hiking in the summer, or writing blog posts about things I’m learning.",
 ];
 
 const skillBars = [
   { label: "Python", level: 95 },
-  { label: "AWS (Lambda, API Gateway, SQS, S3, IAM)", level: 93 },
-  { label: "SQL / Aurora PostgreSQL / Redshift", level: 90 },
-  { label: "TypeScript / JavaScript / Java", level: 86 },
-  { label: "ETL, Monitoring, and Reliability", level: 90 },
-  { label: "TensorFlow / OpenCV / Mask R-CNN", level: 82 },
+  { label: "TypeScript / JavaScript", level: 90 },
+  { label: "SQL (PostgreSQL, Aurora, Redshift)", level: 92 },
+  { label: "Node.js", level: 86 },
+  { label: "Java", level: 78 },
+  { label: "Go", level: 55 },
+  { label: "C++", level: 50 },
+  { label: "AWS Serverless (Lambda, API Gateway)", level: 93 },
+  { label: "AWS Data and Messaging (S3, SQS, SNS)", level: 90 },
+  { label: "AWS Security (IAM, STS)", level: 85 },
+  { label: "AWS Monitoring (CloudWatch)", level: 88 },
+  { label: "AWS Orchestration (Step Functions)", level: 82 },
+  { label: "ETL and Data Pipelines", level: 92 },
+  { label: "Data Modeling and Validation", level: 85 },
+  { label: "Performance Tuning and Reliability", level: 90 },
+  { label: "BI and Dashboards (QuickSight)", level: 82 },
+  { label: "React", level: 82 },
+  { label: "Next.js", level: 80 },
+  { label: "HTML / CSS / Tailwind", level: 78 },
+  { label: "Terraform (Infrastructure as Code)", level: 82 },
+  { label: "CI/CD (build and release pipelines)", level: 75 },
+  { label: "Applied ML (TensorFlow)", level: 80 },
+  { label: "Computer Vision (OpenCV, Mask R-CNN)", level: 78 },
+  { label: "Quant Research Pipelines (features, backtests)", level: 76 },
+  { label: "MCP Automation (tools, agents, workflows)", level: 80 },
+  { label: "LLM Integrations (prompting, tool use)", level: 78 },
+  { label: "Web Automation (Puppeteer, Selenium)", level: 80 },
+  { label: "Proxies and Scraping (ScraperAPI, ZenRows)", level: 75 },
 ];
 
 const focusAreas = [
@@ -34,8 +55,8 @@ const focusAreas = [
   },
   {
     id: "ml",
-    title: "Applied ML",
-    text: "Integrating ML and computer vision workflows into real systems with measurable outcomes and maintainable deployments.",
+    title: "Quant + ML",
+    text: "Building ML driven research pipelines with feature engineering, backtesting, and clear evaluation so ideas can be tested, not just described.",
   },
 ];
 
