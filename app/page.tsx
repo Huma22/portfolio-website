@@ -9,7 +9,7 @@ import Footer from "@/components/Footer";
 
 export default function Home() {
   return (
-    <main style={{ backgroundColor: "#121212" }}>
+    <main className="overflow-safe w-full" style={{ backgroundColor: "#121212", paddingInline: 0 }}>
       {/* Fixed navigation */}
       <Navbar />
 
@@ -20,25 +20,17 @@ export default function Home() {
         <Overlay />
       </ScrollyCanvas>
 
-      <div className="space-y-48 md:space-y-56">
-        {/* ────────────────────────────────────────────────
-            ABOUT
-        ──────────────────────────────────────────────── */}
+      <div className="max-w-5xl lg:max-w-6xl xl:max-w-7xl w-full mx-auto space-y-16 md:space-y-24 lg:space-y-28 px-5 sm:px-6 lg:px-8">
+        {/* ──────────────────────────────────────────────── */}
         <About />
 
-        {/* ────────────────────────────────────────────────
-            WORK
-        ──────────────────────────────────────────────── */}
+        {/* ──────────────────────────────────────────────── */}
         <Work />
 
-        {/* ────────────────────────────────────────────────
-            PROJECTS
-        ──────────────────────────────────────────────── */}
+        {/* ──────────────────────────────────────────────── */}
         <Projects />
 
-        {/* ────────────────────────────────────────────────
-            COFFEE CHAT
-        ──────────────────────────────────────────────── */}
+        {/* ──────────────────────────────────────────────── */}
         <CoffeeChat />
       </div>
 

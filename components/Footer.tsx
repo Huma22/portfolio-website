@@ -2,12 +2,6 @@
 
 import { motion } from "framer-motion";
 
-const socialLinks = [
-    { label: "GitHub", href: "https://github.com/Huma22" },
-    { label: "LinkedIn", href: "https://linkedin.com/in/humaakkem/" },
-    { label: "Email", href: "mailto:akkemhumatejaswi222@gmail.com" },
-];
-
 export default function Footer() {
     return (
         <footer
@@ -28,7 +22,7 @@ export default function Footer() {
                 }}
             />
 
-            <div className="w-full max-w-5xl mx-auto flex flex-col items-center justify-center gap-6 text-center px-6">
+            <div className="w-full max-w-6xl mx-auto px-5 sm:px-6 lg:px-8 flex flex-col items-center justify-center gap-6 text-center">
                 {/* Center content */}
                 <motion.div
                     initial={{ opacity: 0 }}
@@ -58,7 +52,7 @@ export default function Footer() {
                     whileInView={{ opacity: 1 }}
                     viewport={{ once: true }}
                     transition={{ duration: 0.8, delay: 0.15 }}
-                    className="flex items-center justify-center gap-6 w-full"
+                    className="flex items-center justify-center gap-6 w-full flex-wrap"
                 >
                     <a href="https://github.com/Huma22" target="_blank" rel="noopener noreferrer" className="text-sm font-medium transition-colors duration-200" style={{ color: "rgba(240,240,240,0.4)" }} onMouseEnter={(e) => (e.target as HTMLElement).style.color = "#C8F53F"} onMouseLeave={(e) => (e.target as HTMLElement).style.color = "rgba(240,240,240,0.4)"}>
                         GitHub
@@ -86,7 +80,7 @@ export default function Footer() {
 
             {/* Bottom copy */}
             <div
-                className="w-full max-w-5xl mx-auto mt-10 pt-6 px-6 flex flex-col md:flex-row items-center justify-between gap-2 text-xs"
+                className="w-full max-w-6xl mx-auto px-5 sm:px-6 lg:px-8 mt-10 pt-6 flex flex-col lg:flex-row items-center justify-between gap-2 text-xs"
                 style={{
                     borderTop: "1px solid rgba(255,255,255,0.05)",
                     color: "rgba(240,240,240,0.25)",

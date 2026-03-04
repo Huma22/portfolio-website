@@ -7,6 +7,8 @@
   --accent-glow: rgba(200, 245, 63, 0.25);
   --glass: rgba(255, 255, 255, 0.04);
   --glass-border: rgba(255, 255, 255, 0.08);
+  --layout-gutter: 16px;
+  --section-gap: 48px;
 }
 
 @theme inline {
@@ -27,15 +29,21 @@
 html {
   scroll-behavior: smooth;
   background-color: #121212;
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
 }
 
 body {
   background-color: #121212;
   color: var(--foreground);
-  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  font-family: inherit;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   overflow-x: hidden;
+  padding-inline: 16px;
+}
+
+* {
+  font-family: inherit;
 }
 
 /* Thin scrollbar */
@@ -59,4 +67,47 @@ body {
 
 canvas {
   display: block;
+}
+
+@media (min-width: 641px) {
+  :root {
+    --layout-gutter: 20px;
+    --section-gap: 64px;
+  }
+}
+
+@media (min-width: 1025px) {
+  :root {
+    --layout-gutter: 28px;
+    --section-gap: 80px;
+  }
+}
+
+.layout-shell {
+  width: 100%;
+  max-width: 1280px;
+  margin-inline: auto;
+  padding-inline: var(--layout-gutter);
+}
+
+.stack-sections > * + * {
+  margin-top: var(--section-gap);
+}
+
+.overflow-safe {
+  width: 100%;
+  max-width: 100%;
+  overflow-x: clip;
+}
+
+@media (min-width: 641px) {
+  body {
+    padding-inline: 16px;
+  }
+}
+
+@media (min-width: 1025px) {
+  body {
+    padding-inline: 24px;
+  }
 }

@@ -26,7 +26,7 @@ const roles = [
   {
     company: "University of Illinois at Chicago",
     title: "Computer Science Teaching Assistant-CS362 ",
-    period: "Dec2021 - Jan 2023",
+    period: "Dec 2021 - Dec 2022S",
     summary:
       "Assisted the professor in supervising students using hardware tools including Arduino, Raspberry Pi, MinnowBoard MAX, and Nanode. Guided 250+ students through hands on lab sessions, ran office hours for individual support, and provided detailed feedback on assignments and labs to help students strengthen understanding and stay on track.",
   },
@@ -41,14 +41,14 @@ const roles = [
 
 export default function Work() {
   return (
-    <section id="work" className="relative px-6 md:px-10 pt-28 pb-24 md:pt-32">
-      <div className="w-full">
+    <section id="work" className="relative pt-20 sm:pt-24 lg:pt-32 pb-14 sm:pb-16 lg:pb-24">
+      <div className="w-full max-w-7xl mx-auto px-5 sm:px-6 lg:px-8">
         <motion.div
           initial={{ opacity: 0, y: 24 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.6 }}
-          className="mx-auto max-w-8xl mb-16 md:mb-20 text-center"
+          className="mb-16 md:mb-20 text-center"
         >
           <span
             className="block text-xs font-semibold tracking-[0.3em] uppercase mb-4"
@@ -64,7 +64,7 @@ export default function Work() {
         </motion.div>
 
         <div className="w-full flex justify-center">
-          <div className="w-full max-w-5xl grid grid-cols-1 md:grid-cols-3 gap-5">
+          <div className="w-full max-w-5xl grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-5">
             {roles.map((role, i) => (
               <motion.article
                 key={role.company}

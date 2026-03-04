@@ -43,17 +43,19 @@ function TextSection({
             style={{ opacity, y, x }}
             className={`absolute inset-0 pointer-events-none`}
         >
-            <div className={`mx-auto w-full max-w-6xl h-full flex flex-col justify-center px-6 md:px-10 ${alignClass}`}>
+            <div className={`w-full max-w-7xl mx-auto px-5 sm:px-6 lg:px-8 h-full flex flex-col justify-center ${alignClass}`}>
                 {eyebrow && (
                     <span
                         className="mb-4 text-xs font-semibold tracking-[0.3em] uppercase"
                         style={{ color: "#C8F53F" }}
                     >
                         {eyebrow}
+
+
                     </span>
                 )}
                 <h1
-                    className="font-bold leading-tight"
+                    className="font-bold leading-tight pr-4 sm:pr-0 max-w-full break-words"
                     style={{
                         fontSize: "clamp(2rem, 5vw, 4.8rem)",
                         color: "#f0f0f0",
@@ -66,7 +68,7 @@ function TextSection({
                 </h1>
                 {subline && (
                     <p
-                        className="mt-5 max-w-xl font-light leading-relaxed"
+                        className="mt-5 max-w-xl font-light leading-relaxed pr-4 sm:pr-0"
                         style={{ color: "rgba(240,240,240,0.65)", fontSize: "clamp(1rem, 2vw, 1.2rem)" }}
                     >
                         {subline}
@@ -99,7 +101,7 @@ export default function Overlay() {
                 align="left"
                 eyebrow="✦ Software Engineer"
                 headline={"Huma Tejaswi Akkem"}
-                subline="I build production systems on AWS with Python and SQL, then make them observable, fast, and boring to operate. Exploring quant style workflows for turning data into signals"
+                subline="I build reliable AWS production systems with Python and SQL, designed to be observable, fast, and simple to run. Outside of work, I explore quant workflows for turning data into signals."
                 xOffset={-80}
             />
 

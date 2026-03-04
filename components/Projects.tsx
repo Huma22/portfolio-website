@@ -140,14 +140,14 @@ function ProjectCard({ project, index }: { project: Project; index: number }) {
 
 export default function Projects() {
   return (
-    <section id="projects" className="relative px-6 md:px-10 pt-28 pb-24 md:pt-32">
-      <div className="w-full">
+    <section id="projects" className="relative pt-20 sm:pt-24 lg:pt-32 pb-14 sm:pb-16 lg:pb-24">
+      <div className="w-full max-w-7xl mx-auto px-5 sm:px-6 lg:px-8">
         <motion.div
           initial={{ opacity: 0, y: 24 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.6 }}
-          className="mx-auto max-w-8xl mb-16 md:mb-20 text-center"
+          className="mb-16 md:mb-20 text-center"
         >
           <span className="block text-xs font-semibold tracking-[0.3em] uppercase mb-4" style={{ color: "#C8F53F" }}>
             ✦ Projects
@@ -160,7 +160,7 @@ export default function Projects() {
         </motion.div>
 
         <div className="w-full flex justify-center">
-          <div className="w-full max-w-5xl grid grid-cols-1 md:grid-cols-2 gap-5">
+          <div className="w-full max-w-5xl grid grid-cols-1 lg:grid-cols-2 gap-5">
             {projects.map((project, i) => (
               <ProjectCard key={project.id} project={project} index={i} />
             ))}
@@ -170,7 +170,7 @@ export default function Projects() {
         <div className="mt-16 w-full flex justify-center">
           <div className="w-full max-w-5xl">
             <h3 className="text-2xl font-black mb-6 text-center" style={{ color: "#f0f0f0" }}>Certification Badges</h3>
-            <div className="flex flex-col md:flex-row flex-wrap justify-center items-center gap-6">
+            <div className="flex flex-col sm:flex-row justify-center items-stretch gap-6">
               {certifications.map((cert, i) => (
                 <motion.article
                   key={cert.title}
@@ -178,11 +178,11 @@ export default function Projects() {
                   whileInView={{ opacity: 1, y: 0 }}
                   viewport={{ once: true }}
                   transition={{ duration: 0.5, delay: i * 0.08 }}
-                  className="rounded-2xl p-4 w-full md:w-auto"
+                  className="rounded-2xl p-4 flex-1"
                   style={{
                     background: "rgba(255,255,255,0.03)",
                     border: "1px solid rgba(255,255,255,0.08)",
-                    maxWidth: "350px",
+                    maxWidth: "300px",
                   }}
                 >
                   <Image src={cert.image} alt={cert.title} width={420} height={420} className="w-full h-auto rounded-xl object-contain" />
